@@ -382,5 +382,13 @@ int main()
         }
         else
         run(task, a);
+        free(taskk);
     }
+    for(int i = 0; i < MAX; i++)
+    {
+        free(task[i]);
+        free(diir[i]);
+    }
+    free(task);
+    free(diir);
 }
